@@ -1,0 +1,76 @@
+/* Estilo para el header / hero */
+.hero {
+background: linear-gradient(135deg, #02452e 0%, #69f0ab 100%); /* degradado moderno */
+color: white;
+padding: 48px 0;
+border-radius: 0 0 24px 24px;
+margin-bottom: 24px;
+}
+
+/* Tarjetas de producto con sombra y efecto hover */
+.product-card {
+transition: transform .18s ease, box-shadow .18s ease;
+cursor: pointer;
+}
+.product-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 30px rgba(20,20,60,0.12);
+}
+
+/* Imagen dentro de la tarjeta: mantener proporción */
+.product-img {
+height: 180px;
+object-fit: contain;
+background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.04));
+}
+
+/* IVA incluido */
+.price-note {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-left: 8px;
+}
+
+/* Footer discreto pero legible */
+footer {
+margin-top: 48px;
+padding: 24px 0;
+background: #0f172a;
+color: #cbd5e1;
+}
+
+/* Contenedor central para las vistas SPA */
+#app {
+min-height: 60vh;
+}
+
+/* Miniaturas de Imagen */
+.thumb-list img {
+  width: 60px;
+  height: 45px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+.category-pill {
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+/* Efecto de desplazamiento para previsualizar otras imágenes: transición suave */
+.product-img-preview {
+  transition: opacity 250ms ease;
+}
+
+/* Botones más/menos en la cantidad del carrito */
+.qty-controls {
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.qty-controls .btn {
+  padding: 0.2rem 0.5rem;
+  min-width:34px;
+}
